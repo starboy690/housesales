@@ -1,0 +1,1174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        
+        .navbar{
+            background-image: url(buy.jpeg.jpg);
+            width: 100%;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-position: center;
+            height: 660px;
+          
+        }
+
+        .logo img{
+            width: 55px;
+            padding-left: 28px;
+            padding-top: 2px;
+        }
+        ul.one{
+            display: flex;
+            margin: 16px;
+            margin-top: -19px;
+            padding-left: 280px;
+        }
+        ul.one li{
+            margin: 15px;
+           display: inline;
+           font-size: 18px;
+           color: white;
+           margin-left: 19px;
+        }
+        ul.one li:hover{
+            text-decoration: underline  2px rgb(225, 169, 67);
+            
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        ul.two {
+            display: flex;
+            float: right;
+            margin-top: -39px;
+            margin-right: 90px;
+
+        }
+        ul.two li{
+            display: inline;
+            margin: 15px;
+            font-size: 18px;
+           color: azure;
+
+
+        }
+        ul.two li:hover{
+            text-decoration: underline 2px rgb(225, 169, 67);
+            
+        }
+        .four i{
+           font-size: 35px;
+           margin-right: 23px;
+          float: right;
+          margin-top: -46px;
+
+           
+        }
+        .four i:hover{
+            color: red ;
+        }
+        p.three{
+            text-align: center;
+            margin-top: -62px;
+            padding-right: 1160px;
+            font-size: 19px;
+            padding-top: 19px;
+            color: rgba(234, 62, 10, 0.87);
+        }
+        .header{
+            height: 55px;
+            background-color: #2D4930;
+        }
+        .center{
+            justify-items: center;
+            margin-top: 165px;
+            padding: 12px;
+
+        }
+        .center h1.one{
+            padding-bottom: 29px;
+            font-size: 66px;
+            margin-top: -74px;
+            color: rgb(251, 251, 250);
+            margin-left: -45px;
+        }
+       .body1 .search{
+            background-color: white;
+            width: 700px;
+            border-radius: 19px;
+            height: 65px;
+            margin-top: 2px;
+            margin-left: 7px;
+           border-radius: 47px;
+        }
+        .center input{
+            width: 528px;
+            margin-top: 12px;
+            font-size: 20px;
+            height: 44px;
+            border: white 4px solid ;
+            padding-left: 12px;
+            outline: none;
+        }
+
+        .search i{
+            font-size: 22px;
+            color: rgb(240, 4, 4);
+            margin-left: 18px;
+            margin-top: 14px;
+        }
+
+        .body1{
+            background-color: black;
+            height: 114px;
+            border-radius: 12px;
+            width: 780px;
+            margin-right: 22px;
+           padding-top: 1px;
+           border-radius: 12px;
+           margin-top: 54px;
+        }
+        
+        .body1 .search2{
+            background-color: rgba(0, 0, 255, 0.389);
+            color: white;
+            width: 90px;
+            margin-left: 590px;
+            margin-top: -39px;
+            text-align: center;
+            font-size: 22px;
+            height: 29px;
+            border-radius: 24px;
+
+
+        }
+        .body1 .search2:hover{
+            background-color: rgba(10, 10, 231, 0.751);
+        }
+        .body1 ul.zer{
+            display: flex;
+            padding-top: 32px;
+            margin-left: 32px;
+           
+            }
+
+        ul.zer li{
+            display: inline;
+            margin: 8px;
+            margin-left: 12px;
+           
+
+        }
+         .bi b{
+            color: white;
+            font-size: 16px
+        }
+        .zer a{
+            color: rgb(238, 240, 240);
+        }
+
+        .zer a:hover{
+            text-decoration: underline 1px solid  rgba(0, 140, 205, 0.87);
+            color: rgba(2, 166, 243, 0.585);
+        }
+
+        .sound{
+            background-color: rgba(255, 254, 254, 0.99);
+            width: 37px;
+            height: 45px;
+            border-radius: 37px;
+            margin-top: -100px;
+            margin-left: 675px;
+        }
+
+        .sound i{
+            color: black;
+            font-size: 19px;
+         padding-top: 12px;
+         padding-left: 12px;
+        }
+
+        .sound:hover{
+            background-color:rgba(230, 166, 166, 0.804);
+        }
+
+        h1{
+            margin-top: 23px;
+            margin-left: 120px;
+            font-size: 30px;
+        }
+
+        .op{
+            display: flex;
+            margin-left: 110px;
+            margin-top: 23px;
+            margin-bottom: 20px;
+
+        }
+
+        .op li{
+            display: inline;
+            font-size: 15px;
+            margin: 11px;
+        }
+
+
+        .op li:hover{
+            text-decoration:  underline rgb(8, 81, 199) solid 2px;
+        }
+
+        .houses{
+            display: flex;
+            margin-left: 106px;
+        }
+
+        .card-auto{
+            width: 280px;
+            margin: 15px;
+            border: solid whitesmoke;
+            border-radius: 12px;
+            height: 320px;
+            margin-top: 24px;
+        }
+
+        .card-auto img{
+            width: 100%;
+            height: 178px;
+            border-radius: 7px;
+            position: relative;
+            
+        }
+
+      
+
+        .card-auto .is{
+            color: #FFD700;
+           font-size: 19px;
+           margin-left: 5px;
+           margin-top: -5px;
+          }
+        
+
+        .houses2{
+            display: flex;
+            margin-left: 106px;
+            margin-top: 20px;
+        }
+
+        .card-auto2{
+            width: 280px;
+            margin: 15px;
+            border: solid whitesmoke;
+            border-radius: 12px;
+            height: 320px;
+        }
+
+        .card-auto2 img{
+            width: 100%;
+            height: 178px;
+            border-radius: 7px;
+            
+        }
+         .card-auto i{
+            margin-top: 14px;
+            margin-left: 5px;
+        }
+        .card-auto p{
+            font-size: 18px;
+            margin-left: 13px;
+            margin-top: 5px;
+        }
+
+        .card-auto .se{
+            font-size: 22px;
+            color: black;
+        }
+        .card-auto:hover{
+            transform: scale(1.1);
+        }
+
+        .zer p{
+            margin-left: 22px;
+            margin-top: -19px;
+            padding-bottom: 9px;
+        }
+
+        .card-auto2 i{
+            margin-top: 14px;
+            margin-left: 5px;
+        }
+        .card-auto2 p{
+            font-size: 18px;
+            margin-left: 13px;
+            margin-top: 5px;
+        }
+
+        .card-auto2 .is{
+            color: #FFD700;
+           font-size: 19px;
+           margin-left: 5px;
+           margin-top: -5px;
+          }
+
+
+        .card-auto2 .zer p{
+            margin-left: 22px;
+            margin-top: -19px;
+            padding-bottom: 9px; 
+        }
+
+        .card-auto2 .se{
+            font-size: 22px;
+            color: black;
+        }
+        .card-auto2:hover{
+            transform: scale(1.1);
+        }
+        
+       
+
+        .info{
+            display: flex;
+            background-color: white;
+            width: 100%;
+            height: 120px;
+            padding-top: 45px;
+            margin-top: 23px;
+
+        }
+
+        .five{
+            margin-left: 217px;
+            width: 220px;
+            background-color: white;
+            height: 34px;
+            border-radius: 36px;
+            border: 1px solid rgb(24, 171, 220);
+        }
+
+        .five:hover{
+            background-color: rgb(24, 171, 220);
+        }
+        .five p:hover{
+            color: white;
+        }
+        .five p {
+            color: black;
+            width: 140px;
+            padding-top: 8px;
+            padding-left: 12px;
+            
+
+        }
+
+
+        .five  .ia {
+           margin-left: 174px;
+           margin-top: -18px ;
+           
+           
+            
+          
+        }
+
+        .six{
+            margin-left: 127px;
+            width: 245px;
+            background-color: white;
+            height: 34px;
+            border-radius: 36px;
+            border: 1px solid rgb(175, 91, 13);
+        }
+
+        .six:hover{
+            background-color: rgb(175, 91, 13);
+        }
+        .six p:hover{
+            color: white;
+        }
+
+        .six p {
+            color: black;
+            padding-top: 8px;
+            padding-left: 18px;
+
+        }
+
+        .six .ib{
+            margin-left: 194px;
+           margin-top: -18px ;
+        }
+
+        .seven{
+            margin-left: 127px;
+            width: 220px;
+            background-color: white;
+            height: 34px;
+            border-radius: 36px;
+            border: 1px solid rgb(251, 168, 3);
+        }
+
+        .seven:hover{
+            background-color: rgb(251, 168, 3);
+        }
+        .seven p:hover{
+            color: white;
+        }
+
+        .seven p {
+            color: black;
+            width: 140px;
+            padding-top: 8px;
+            padding-left: 22px;
+
+        }
+
+        .seven .ic{
+            margin-left: 164px;
+           margin-top: -18px ;
+        }
+
+        h2{
+            color: black;
+            font-size: 34px;
+            margin-left: -45px;
+            margin-top: 75px;
+
+        }
+
+        b{
+            color: rgb(45, 45, 236);
+            font-size: 34px;
+        }
+       
+       .next{
+        display: flex;
+        margin-left: -57px;
+        margin-top: 57px;
+       }
+
+       .next .card-auto .i1 i{
+        font-size: 54px;
+        color: rgb(6, 139, 248);
+        margin-left: 104px;
+        margin-top: 37px;
+        padding-bottom: 18px;
+       }
+
+       .next .card-auto .i2 i{
+        font-size: 54px;
+        color: rgba(226, 46, 9, 0.845);
+        margin-left: 104px;
+        margin-top: 37px;
+        padding-bottom: 18px;
+       }
+
+       .next .card-auto .i3 i{
+        font-size: 54px;
+        color: rgb(94, 229, 94);
+        margin-left: 104px;
+        margin-top: 37px;
+        padding-bottom: 18px;
+       }
+
+       .next .card-auto .i4 i{
+        font-size: 54px;
+        color: silver;
+        margin-left: 104px;
+        margin-top: 37px;
+        padding-bottom: 18px;
+       }
+
+       h3{
+        margin-left: 8px;
+        color: rgb(5, 153, 245);
+        font-size: 20px;
+       }
+
+       .next .card-auto .parag1{
+        text-align: center;
+        font-size: 22px;
+        margin-right: 19px;
+        color: rgba(0, 0, 0, 0.911);
+        padding-bottom: 27px;
+        font-family: 'Times New Roman', Times, serif;
+        
+       }
+
+       .card-auto .parag2{
+        text-align: left;
+        font-size: 14PX;
+        color: rgba(67, 67, 67, 0.792);
+       }
+
+        .container{
+            max-width: 1100Px;
+            width: 95%;
+            margin-top: 59px;
+            margin-left: 180px;
+        }
+
+        .slider-wrapper{
+            position: relative;
+        }
+
+        .slider-wrapper .slide-button{
+            position: absolute;
+            top: 50%;
+            height: 40px;
+            position: absolute;
+            width: 40px;
+            background: #000;  
+            border-radius: 70%;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            transform: translateY(-50%);
+            
+        }
+
+        .slider-wrapper .slide-button:hover{
+            background: #444;
+        }
+
+        .slider-wrapper .slide-button i{
+            color: white;
+            padding-left: 9px;
+            font-size: 1.5rem;
+            padding-top: 7px;
+        }
+
+        
+
+        .slider-wrapper .slide-button#prev-slide{
+            left: -140px;
+            display: none;
+        }
+
+        .slider-wrapper .slide-button#next-slide{
+            right: -140px;
+           
+        }
+
+       .slider-wrapper .image-list{
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        gap: 18px;
+        font-size: 0;
+        overflow-x: auto;
+        scrollbar-width: none;
+       }
+
+       .slider-wrapper .image-list::-webkit-scrollbar{
+        display: none;
+       }
+
+       .slider-wrapper .image-list .image-item{
+        width: 325px;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 12px;
+
+       }
+
+      
+
+       .container .slider-scrollbar{
+        height: 24px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+       }
+
+       .slider-scrollbar .scrollbar-track{
+        height: 2px;
+        width: 100%;
+        background: #ccc;
+        position: relative;
+        border-radius: 4px;
+
+       }
+
+       .slider-scrollbar .scrollbar-thumb{
+        position: absolute;
+        height: 100%;
+        width: 30%;
+        background: #000;
+        border-radius: inherit;
+        cursor: grab;
+       }
+
+       .slider-scrollbar .scrollbar-thumb:active{
+        cursor: grabbing;
+        height: 8px;
+        top: -2px;
+       }
+
+       .slider-scrollbar .scrollbar-thumb::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -10px;
+        bottom: -10px;
+
+       }
+       @media (max-width:1023px){
+        .slider-wrapper .slide-button{
+            display: none!important;
+        }
+
+        .slider-wrapper .image-list{
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+       }
+
+
+
+
+
+       footer{
+        background-color: #2D4930;
+        width: 100%;
+        height: 300px;
+        margin-top: 65px;
+    }
+    footer ul.three{
+        display: flex;
+        margin-top: 25px;
+        
+    }
+    footer ul.three li{
+        display: inline;
+        padding-top: 45px;
+        padding-left: 34px;
+        font-size: 15px;
+        color: white;
+        margin: 0 45px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    footer ul.three li:hover{
+        text-decoration: underline solid 3px rgba(18, 18, 17, 0.682);
+    }
+
+    footer ul.four{
+        display: flex;
+        margin-top: 25px;
+        
+    }
+    footer ul.four li{
+        display: inline;
+        padding-top: 45px;
+        padding-left: 34px;
+        font-size: 15px;
+        color: white;
+        margin: 0 45px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    footer ul.four li:hover{
+        text-decoration: underline solid 3px rgba(11, 11, 11, 0.682);
+    }
+    .socialIcons i{
+        padding-top: 45px;
+        padding-left: 51px;
+        font-size: 26px;
+        color: rgb(27, 3, 3);
+        margin: 0 25px;
+
+    }
+    .socialIcons p{
+        font-size: 20px;
+        color: white;
+        margin-left: 550px;
+        padding-left: 85px;
+        margin-top: -28px;
+    }
+    .socialIcons p:hover{
+        color: red;
+    }
+    .socialIcons a{
+        text-decoration: none;
+    }
+
+    footer .footerBottom{
+        margin-left: 1260px;
+        margin-top: 22px;
+        font-size: 18px;
+        color: rgb(254, 253, 252);
+    }
+
+
+
+   
+       
+
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+    
+        <div class="header">
+
+        <div class="logo">
+            <img src="C:\Users\asana\OneDrive\Pictures\Screenshots\Screenshot 2025-04-04 101427.png">
+            </div>
+        <a href="#"><p class="three">OSHOUSESALES.COM</p></a>
+    
+    <ul class="one">
+    <a href="#"><li>Buy</li></a>
+    <a href="#"><li>Project</li></a>
+    <a href="rental.html"><li>Rent</li></a>
+    <a href="portfolio.html"><li>Home</li></a>
+    </ul>
+
+ 
+
+    <ul class="two">
+        <a href="services.html"><li>Services</li></a>
+        <a href="#"><li>Portfolio</li></a>
+    </ul>
+
+    <div class="four">
+        <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+    </div>
+</div>
+<div class="center">
+    <h1 class="one">BUY</h1>
+    <div class="body1">
+    <div class="search">
+    <i class="fa-solid fa-location-dot"></i>
+    <input type="search" placeholder="City / Address / Neighbourhood"> 
+    <a href="services.html"><div class="search2">
+       <p>Search</p> 
+    </div></a>
+      <ul class="zer">
+        <div class="bi">
+        <b>Hot Cities:</b>
+       </div>
+        <a href="services.html"><li>M'Badon</li></a>
+        <a href="services.html"><li>Cocody</li></a>
+        <a href="services.html"><li>Bouaké</li></a>
+        <a href="services.html"><li>San-Pédro</li></a>
+        <a href="services.html"><li>Yamoussoukro</li></a>
+        <a href="services.html"><li>Abidjan</li></a>
+    </ul>
+</div>
+</div>
+<a href="#"><div class="sound">
+    <i class="fa-solid fa-microphone"></i>
+</div></a>
+</div>
+
+
+
+    </nav>
+
+
+    <section>
+        <h1>Recommended properties in hot cities in Abidjan</h1>
+
+        <ul class="op">
+            <a href="#"><li>M'Badon</li></a>
+            <a href="#"><li>Cocody</li></a>
+            <a href="#"><li>Bouaké</li></a>
+            <a href="#"><li>San-Pédro</li></a>
+            <a href="#"><li>Yamoussoukro</li></a>
+            <a href="#"><li>Abidjan</li></a>
+        </ul>
+
+        <hr>
+
+        <div class="houses">
+         <div class="card-auto">
+            <a href="#"><img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\buy 2.jpeg"></a>
+          <div>
+            <p>Deux Plateau</p>
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="zer">
+            <p>1209P YUI, Deux Plateau</p>
+        </div>
+            <p class="se">XOF 5,567,908</b>
+          </div>
+          <div class="is">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+          </div>
+            </div>
+
+
+            <div class="card-auto">
+                <a href="#"><img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\BUY 3.jpeg"></a>
+                <div>
+                    <p>Cumorah</p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="zer">
+                    <p>129X ZEV, Cumorah</p>
+                </div>
+                <p class="se">XOF 6,967,908</p>
+                </div>
+                <div class="is">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  </div>
+
+
+            <div class="card-auto">
+            <a href="#"><img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\buy 4.jpeg"></a>
+                    <div>
+                      <p>Riviéra Palmeraie</p>
+                      <i class="fa-solid fa-location-dot"></i>
+                      <div class="zer">
+                      <p>12X Z56, Cumorah</p>
+                  </div>
+                  <p class="se">XOF 2,467,908</p>
+                    </div>
+                    <div class="is">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                      </div>
+                      </div>
+
+
+                      <div class="card-auto">
+                        <a href="#"><img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\buy 7.jpeg"></a>
+                                <div>
+                                  <p>Riviéra Palmeraie</p>
+                                  <i class="fa-solid fa-location-dot"></i>
+                                  <div class="zer">
+                                  <p>129X Vdr, Cumorah</p>
+
+                              </div>
+                              <p class="se">XOF 5,467,908</p>
+                                </div>
+                                <div class="is">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star"></i>  
+                                    <i class="fa-solid fa-star-half"></i>
+                                  </div>
+                                  </div>
+        </div>
+
+
+        <div class="houses2">
+            <div class="card-auto2">
+                <a href="#"><img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\BUY 5.jpg" ></a>
+             <div>
+                <p>Riviéra Palmeraie</p>
+                <i class="fa-solid fa-location-dot"></i>
+                <div class="zer">
+                <p>129X Vdr, Cumorah</p>
+               </div>
+               <p class="se">XOF 2,567,908</p>
+               </div>
+               <div class="is">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+               </div>
+   
+   
+            <div class="card-auto2">
+                <a href="#"> <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\buy 6.jpeg"></a>
+            <div>
+            <p>Riviéra Palmeraie</p>
+            <i class="fa-solid fa-location-dot"></i>
+            <div class="zer">
+            <p>129X Vdr, Cumorah</p>
+            </div>
+            <p class="se">XOF 3,567,908</p>
+            </div>
+            <div class="is">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+   
+   
+            <div class="card-auto2">
+                <a href="#"><img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\buy 7.jpeg"></a>
+           <div>
+            <p>Riviéra Palmeraie</p>
+            <i class="fa-solid fa-location-dot"></i>
+             <div class="zer">
+                <p>129X Vdr, Cumorah</p>
+            </div>
+            <p class="se">XOF 3,997,908</p>
+            </div>
+            <div class="is">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+            </div>
+
+            <div class="card-auto2">
+            <a href="#"><img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\BUY 8.webp"></a>
+            <div>
+           <p>Riviéra Palmeraie</p>
+             <i class="fa-solid fa-location-dot"></i>
+             <div class="zer">
+             <p>129X Vdr, Cumorah</p>
+
+            </div>
+            <p class="se">XOF 3,907,908</p>
+             </div>
+             <div class="is">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+           </div>
+    </div>
+
+    <div class="info">
+        <a href="#"><div class="five">
+            <p>See all new Projects</p>
+            <div class="ia">
+            <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </div></a>
+       
+
+        <a href="services.html"><div class="six">
+            <p>See all our Agents</p>
+            <div class="ib">
+            <i class="fa-solid fa-circle-info"></i>
+        </div>
+        </div></a>
+
+        <a href="rental.html"><div class="seven">
+            <p>See all Rents</p>
+            <div class="ic">
+            <i class="fa-solid fa-circle-info"></i>
+            </div>
+        </div></a>
+
+    </div>
+
+
+    <div class="container">
+        <div class="slider-wrapper">
+           <div class="slide-button" id="prev-slide"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="image-list">
+                <img src="C:\Users\asana\OneDrive\Desktop\First Project\bUY 13.jpg" alt="img-2" class="image-item">
+                <img src="C:\Users\asana\OneDrive\Desktop\First Project\BUY 14.jpg" alt="img-3" class="image-item">
+                <img src="C:\Users\asana\OneDrive\Desktop\First Project\bUY 15.jpg" alt="img-4" class="image-item">
+                <img src="C:\Users\asana\OneDrive\Desktop\First Project\BUY 12.jpg" alt="img-1" class="image-item">
+                <img src="C:\Users\asana\OneDrive\Desktop\First Project\bUY 16.jpg" alt="img-5" class="image-item">
+                <img src="C:\Users\asana\OneDrive\Desktop\First Project\BUY 17.jpg" alt="img-6" class="image-item">
+                <img src="C:\Users\asana\OneDrive\Desktop\First Project\bUY 15.jpg" alt="img-4" class="image-item">
+                <img src="C:\Users\asana\OneDrive\Desktop\First Project\bUY 18.jpg" alt="img-7" class="image-item">
+                <img src="C:\Users\asana\OneDrive\Desktop\First Project\BUY 19.jpg" alt="img-8" class="image-item">
+                <img src="C:\Users\asana\OneDrive\Desktop\First Project\bUY 16.jpg" alt="img-5" class="image-item">
+            </div>
+            <div class="slide-button" id="next-slide"><i class="fa-solid fa-arrow-right"></i></div>
+
+        <div class="slider-scrollbar">
+            <div class="scrollbar-track">
+            <div class="scrollbar-thumb">
+
+            </div>
+            </div>
+        </div>
+    </div>
+
+
+    <h2><b>House Purchase Online</b> 4 Easy Steps</h2>
+
+    <div class="next">
+        <a href="#"><div class="card-auto">
+            <div>
+                <h3>1</h3>
+            <div class="i1">
+             <i class="fa-solid fa-magnifying-glass-location"></i>
+            </div>
+             <p class="parag1">Discover & Dream</p>
+
+             <p class="parag2">Find the new home you dream about with the most accurate list of new construction homes</p>
+            </div>
+        </div>
+
+        <a href="#"> <div class="card-auto">
+            <div>
+                <h3>2</h3>
+                <div class="i2">
+                <i class="fa-solid fa-house-laptop"></i>
+            </div>
+             <p class="parag1">Visualize & Decide</p>
+
+             <p class="parag2">Choose your home by using visualization tools and virtual tour options. All online!</p>
+            </div>
+        </div></a>
+
+        <a href="#"> <div class="card-auto">
+            <div>
+                <h3>3</h3>
+                <div class="i3">
+                <i class="fa-solid fa-phone-volume"></i>
+                 </div>
+
+             <p class="parag1">Contact Us</p>
+
+             <p class="parag2">Leave your information on the website or email us at contact@oshousesales.com. Well call you back</p>
+            </div>
+        </div></a>
+
+        <a href="#"><div class="card-auto">
+            <div>
+                <h3>4</h3>
+                <div class="i4">
+                <i class="fa-solid fa-key"></i>
+                </div>
+
+             <p class="parag1">Agree & Contract</p>
+
+             <p class="parag2">Review your contract, match with a lender & sign digitally all in one place from your couch.</p>
+            </div>
+        </div></a>
+
+    </div>
+
+   
+    <script>
+
+        const initSlider = () => {
+            const imageList = document.querySelector(".slider-wrapper  .image-list");
+            const slideButtons = document.querySelectorAll(".slider-wrapper  .slide-button");
+            const sliderScrollbar = document.querySelector(".container  .slider-scrollbar");
+            const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
+            const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
+
+            // Handle scrollbar thumb drag
+            scrollbarThumb.addEventListener("mousedown", (e) => {
+                const startX = e.clientX;
+                const thumbPosition = scrollbarThumb.offsetLeft;
+
+                // Update thumb position on mouse move
+                const handleMouseMove = (e) => {
+                    const deltaX = e.clientX - startX;
+                    const newThumbPosition = thumbPosition + deltaX;
+                    const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+
+                    const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+                    const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+
+                    
+
+
+                    scrollbarThumb.style.left = `${boundedPosition}px`;
+                    imageList.scrollLeft = scrollPosition;
+
+                }
+                // Remove event listeners on mouse up
+                const handleMouseUp = () => {
+                 document.removeEventListener("mousemove", handleMouseMove);
+                 document.removeEventListener("mouseup", handleMouseUp);  
+                }
+
+                // Add event listeners for drag interaction
+                document.addEventListener("mousemove", handleMouseMove);
+                document.addEventListener("mouseup", handleMouseUp);
+
+            });
+
+            //  Slide images according to the slide button clicks
+            slideButtons.forEach(button => {
+                button.addEventListener("click", () => {
+                const direction = button.id === "prev-slide" ? -1 : 1;
+                const scrollAmount = imageList.clientWidth * direction;
+                imageList.scrollBy({ left: scrollAmount, behavior: "smooth"});
+                });
+            });
+
+            const handleSliderButtons = () => {
+                slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "block"
+                slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "block"
+            }
+            // Update scrollbar thumb position based on image scroll
+            const updateScrollThumbPosition = () => {
+                const scrollPosition = imageList.scrollLeft;
+                const thumbPosition = (scrollPosition / maxScrollLeft )  *  (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
+                scrollbarThumb.style.left = `${thumbPosition}px`;
+            }
+
+            imageList.addEventListener("scroll", () => {
+                handleSliderButtons();
+                updateScrollThumbPosition();
+            });
+        }
+
+        window.addEventListener("load", initSlider);
+    </script>
+    </section>
+
+
+
+    <footer>
+        
+    
+    <a href="#"><ul class="three">
+        <li>About us</li>
+        <li>Career</li>
+        <li>Accessibility</li>
+        <li>Terms of use</li>
+    </ul></a>
+    <a href="#"><ul class="four">
+        <li href="services.html">App help</li>
+        <li>Rentals</li>
+        <li>Advertise with us</li>
+        <li>Join our team</li> 
+        <li>Cookie policy</li> 
+    </ul></a>
+
+    <div class="socialIcons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+    <div class="footerBottom">
+        <p>Copyright &copy;2025;OS House Sales</p>
+        
+
+  </div>
+</footer>
+    
+</body>
+</html>

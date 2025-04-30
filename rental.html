@@ -1,0 +1,778 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar{
+            height: 640px;
+            width: 100%;
+            background: url(Rental.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+          
+            
+            
+        }
+        .navbar .header{
+            height: 60px;
+            background: linear-gradient(135deg,#233925, #515050, rgb(191, 55, 55)); ;
+            color: white;
+            width: 100%;
+            display: flex;
+            
+
+
+        }
+
+        .header img{
+            width: 55px;
+            height: 90%;
+            padding-left: 200Px;
+            padding-top: 3px;
+            border-radius: 11px;
+        }
+
+        .header .one{
+            display: flex;
+            margin-left: 620px;
+            margin-top: 18.5px;
+
+        }
+
+            
+        ul.one li:hover{
+            text-decoration: underline  3px rgb(50, 233, 4);
+
+           
+
+        }
+
+        .one li{
+            display: inline;
+            margin: 12px;
+            font-size: 18px;
+            
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .header  .btn{
+            margin-left: 30px;
+            height: 50%;
+            margin-top: 12px;
+            background-color: white;
+            color: rgb(10, 113, 249);
+            cursor: pointer;
+            border: 1px solid rgb(51, 47, 47);
+            outline: none;
+            width: 100px;
+            border-radius: 5px;
+        }
+
+        .header  .btn1{
+            margin-left: 20px;
+            height: 50%;
+            margin-top: 12px;
+            background-color: rgb(62, 95, 212);
+            color: white;
+            cursor: pointer;
+            border: 1px solid rgb(51, 47, 47);
+            outline: none;
+            width: 80px;
+            border-radius: 5px;
+        }
+
+        div.one{
+            display: flex;
+            background-color: white;
+            width: 100%;
+            height: 90px;
+            justify-content: space-between;
+            margin-bottom: 21px;
+
+        }
+        div.one .two{
+            margin-top: 35px;
+            margin-left: 146px;
+        }
+
+        div.one .two li{
+            font-size: 45px;
+        }
+
+        div.one .search{
+            display: flex;
+          margin-right: 56px;
+          height: 38px;
+          background-color: rgba(127, 125, 125, 0.259);
+          width: 320px;
+          padding-top: 6px;
+          margin-top: 30px;
+          border-radius: 18px;
+
+        }
+
+        div.one .search input{
+            height: 35px;
+            outline: none;
+            background: transparent;
+            border: 2px;
+            color: black;
+            margin-left: 11px;
+            width: 220px;
+            font-size: 15px;
+            padding-left: 6px;
+        }
+
+        div.one .search .search1{
+            background-color: rgb(50, 134, 230);
+            height: 36px;
+            width: 70px;
+            text-align: center;
+            margin-left: 19px;
+            border-radius: 18px;
+            color: white;
+            padding-top: 8px;
+            margin-top: -6px;
+            
+        }
+
+        .search1 P{
+            padding-top: 4px;
+            font-size: 19px;
+        }
+
+        .project{
+            display: block;
+            padding: 8px;
+            margin: 13px;
+            margin-left: 22px;
+            margin-bottom: 32px;
+
+        }
+
+        .card-auto{
+            width: 90%;
+            background-color: whitesmoke;
+            margin: 11px;
+            padding: 16px;
+            border-radius: 22px;
+
+        }
+        .card-auto img{
+            width: 250px;
+            height: 250px;
+            border-radius: 9px;
+            cursor: pointer ;
+           
+        }
+
+        .card-auto img:hover{
+          transform: scale(1.07);
+        }
+
+        .card-auto .inners{
+            display: flex;
+
+        }
+
+        .card-auto .inners1{
+            display: block;
+            margin-left: 32px;
+            margin-top: 35px;
+           
+        }
+        .card-auto .inners1 h2{
+            margin-top: -21px;
+            margin-bottom: 21px;
+            font-size: 28px;
+        }
+
+        .card-auto .inners1 p{
+            margin-bottom: 21px;
+            margin-left: 21px;
+            margin-top: -19px;
+        }
+        
+        .card-auto .inners1 .az{
+            padding-top: 17px;
+            margin-left: -2px;
+            font-size: 16.5px;
+        }
+
+        .card-auto .inners1 h4{
+            padding-top: 14px;
+            font-size: 17px;
+        }
+
+        .inners1 h4 strong{
+            font-size: 22px;
+            padding-left: 9px;
+        }
+        h1{
+            margin-left: 85px;
+        }
+        p.last{
+            text-align: left;
+            margin-left: 46px;
+            margin-top: 22px;
+            font-size: 19px;
+            padding: 7px;
+        }
+
+
+        footer{
+            background-color: #2D4930;
+            width: 100%;
+            height: 300px;
+            margin-top: 5px;
+        }
+        footer ul.three{
+            display: flex;
+            margin-top: 25px;
+            
+        }
+        footer ul.three li{
+            display: inline;
+            padding-top: 45px;
+            padding-left: 34px;
+            font-size: 15px;
+            color: white;
+            margin: 0 45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        footer ul.three li:hover{
+            text-decoration: underline solid 5px rgba(203, 14, 14, 0.682 );
+        }
+
+        footer ul.four{
+            display: flex;
+            margin-top: 25px;
+            
+        }
+        footer ul.four li{
+            display: inline;
+            padding-top: 45px;
+            padding-left: 34px;
+            font-size: 15px;
+            color: white;
+            margin: 0 45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        footer ul.four li:hover{
+            text-decoration: underline solid 5px rgba(203, 14, 14, 0.682 );
+        }
+        .socialIcons i{
+            padding-top: 45px;
+            padding-left: 51px;
+            font-size: 26px;
+            color: rgb(27, 3, 3);
+            margin: 0 25px;
+
+        }
+        .socialIcons p{
+            font-size: 20px;
+            color: white;
+            margin-left: 550px;
+            padding-left: 85px;
+            margin-top: -28px;
+        }
+        .socialIcons p:hover{
+            color: red;
+        }
+        .socialIcons a{
+            text-decoration: none;
+        }
+
+        footer img{
+            margin-left: 1375Px;
+            margin-top: -35px;
+        }
+        footer .footerBottom{
+            margin-left: 1160px;
+            margin-top: -45px;
+            font-size: 13px;
+            color: antiquewhite;
+        }
+
+        .con{
+            margin-left: 350px;
+            margin-top: 112px;
+            background-color: rgba(211, 211, 211, 0.232);
+            border-radius: 8px;
+            width: 260px;
+            height: 130px;
+            box-shadow: 10px 10px 20px rgba(158, 158, 158, 0.708);
+        }
+        .con .po{
+            text-align: center;
+            margin-top: 12px;
+            margin-bottom: 9px;
+
+        }
+
+        .pi{
+            text-align: center;
+            font-size: 19px;
+            color: black;
+        }
+
+        a{
+            text-decoration: none;
+          
+        }
+
+        .con .pe{
+            text-align: center;
+            margin-top: 17px;
+            margin-bottom: 9px;
+            font-size: 16px;
+        }
+
+        .pe i{
+            color: rgb(127, 179, 51);
+            font-size: 18px;
+        }
+
+        .pr{
+            text-align: center;
+            font-size: 19px;
+        }
+
+        .lasts{
+            width: 100%;
+            margin-top: 27px;
+            position: relative;
+        }
+        .lasts iframe{
+            width: 100%;
+        }
+
+        .lasts .img1{
+            background-color: lightgray;
+            padding: 4px;
+            width: 150px;
+            height: 90px;
+            position: absolute;
+            margin-left: 668px;
+            margin-top: -401px;
+        }
+
+        .lasts .img1 img{
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+            
+        }
+
+        i#last{
+            color: red;
+            font-size: 42px;
+            margin-left: 745px;
+            margin-top: -284px;
+            position: absolute;
+            cursor: pointer;
+            
+            
+        }
+
+        h5{
+            font-size: 32px;
+            margin-left: 54px;
+            margin-top: 32px;
+        }
+
+        h5 i#one{
+            margin-left: 9px;
+            color: rgb(96, 100, 99);
+        }
+
+        h5 i#two{
+            margin-left: 12px;
+            color: rgb(26, 231, 7);
+        }
+
+       
+
+        
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+        <div class="header">
+            <img src="C:\Users\asana\OneDrive\Pictures\Screenshots\Screenshot 2025-04-04 101427.png">
+            <ul class="one">
+                <a href="portfolio.html"><li>Home</li></a>
+                <a href="#"><li>Rent</li></a>
+                <a href="buy.html"><li>Buy</li></a> 
+                <a href="#"><li>Project</li></a>
+            </ul>
+
+            <a href="login.html"><button class="btn">Login  /  Signup</button></a>
+            <a href="services.html"><button class="btn1">Agents Hub</button></a>
+        </div>
+    </nav>
+
+    <div class="one">
+        <ul class="two">
+        <li>Rentals</li>
+        </ul>
+
+        <div class="search">
+            <input type="search" placeholder="Search Propery Keyword">
+            <div class="search1"><p>Search</p></div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="project">
+
+    <div class="card-auto">
+        <div class="inners">
+            <img src="rental4.jpg">
+            <div class="inners1">
+            <h2>Memphis</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>210 Laidley St, San Francisco, CA 94131, USA San Francisco</p>
+            <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+            <hr>
+
+           <h4> From   <strong>  XOF 8,657,890</strong> </h4>
+        </div>
+
+        <div class="con">
+            <p class="po">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Address</span>
+            </p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKGJMXNxDqVGmckcSrFGbVhppDZFmQblFhSgRVNMLQXFzZZztxGqxmJxLDJbgmQJQTtWg"><p class="pi">oshousesales@gmail.com</p></a>
+
+            <p class="pe">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Number</span>
+            </p>
+            <p class="pr">+225 01678926289</p>
+            
+        </div>
+        </div>
+
+    </div>
+
+    <div class="card-auto">
+        <div class="inners">
+            <img src="buy 12.jpg">
+            <div class="inners1">
+            <h2>Landing</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>10 Innes Ct, San Francisco, CA 94124, USA San Francisco</p>
+                <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+                <hr>
+
+               <h4> From   <strong>  XOF 5,657,890</strong> </h4>
+
+        </div>
+        <div class="con">
+            <p class="po">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Address</span>
+            </p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKGJMXNxDqVGmckcSrFGbVhppDZFmQblFhSgRVNMLQXFzZZztxGqxmJxLDJbgmQJQTtWg"><p class="pi">oshousesales@gmail.com</p></a>
+
+            <p class="pe">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Number</span>
+            </p>
+            <p class="pr">+225 01678926289</p>
+            
+        </div>
+        
+        </div>
+
+    </div>
+
+
+
+
+
+    <div class="card-auto">
+        <div class="inners">
+            <img src="rental3.jpg">
+            <div class="inners1">
+            <h2>Monarch</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>210 Laidley St, San Francisco, CA 94131, USA San Francisco</p>
+            <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+            <hr>
+
+           <h4> From   <strong>  XOF 4,657,890</strong> </h4>
+        </div>
+
+        <div class="con">
+            <p class="po">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Address</span>
+            </p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKGJMXNxDqVGmckcSrFGbVhppDZFmQblFhSgRVNMLQXFzZZztxGqxmJxLDJbgmQJQTtWg"><p class="pi">oshousesales@gmail.com</p></a>
+
+            <p class="pe">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Number</span>
+            </p>
+            <p class="pr">+225 01678926289</p>
+            
+        </div>
+        </div>
+
+    </div>
+
+
+    
+    <div class="card-auto">
+        <div class="inners">
+            <img src="buy 17.jpg">
+            <div class="inners1">
+            <h2>Zertyui</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>10 Innes Ct, San Francisco, CA 94124, USA San Francisco</p>
+                <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+                <hr>
+
+               <h4> From   <strong>  XOF 5,657,890</strong> </h4>
+
+        </div>
+
+        <div class="con">
+            <p class="po">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Address</span>
+            </p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKGJMXNxDqVGmckcSrFGbVhppDZFmQblFhSgRVNMLQXFzZZztxGqxmJxLDJbgmQJQTtWg"><p class="pi">oshousesales@gmail.com</p></a>
+
+            <p class="pe">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Number</span>
+            </p>
+            <p class="pr">+225 01678926289</p>
+            
+        </div>
+        
+        </div>
+
+    </div>
+
+    <div class="card-auto">
+        <div class="inners">
+            <img src="rental2.jpg">
+            <div class="inners1">
+            <h2>The Barracks</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>210 Laidley St, San Francisco, CA 94131, USA San Francisco</p>
+            <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+            <hr>
+
+           <h4> From   <strong>  XOF 6,657,890</strong> </h4>
+        </div>
+
+        <div class="con">
+            <p class="po">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Address</span>
+            </p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKGJMXNxDqVGmckcSrFGbVhppDZFmQblFhSgRVNMLQXFzZZztxGqxmJxLDJbgmQJQTtWg"><p class="pi">oshousesales@gmail.com</p></a>
+
+            <p class="pe">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Number</span>
+            </p>
+            <p class="pr">+225 01678926289</p>
+            
+        </div>
+        </div>
+
+    </div>
+
+
+    <div class="card-auto">
+        <div class="inners">
+            <img src="rental1.png">
+            <div class="inners1">
+            <h2>Lago Mar</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>210 Laidley St, San Francisco, CA 94131, USA San Francisco</p>
+            <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+            <hr>
+
+           <h4> From   <strong>  XOF 8,907,890</strong> </h4>
+        </div>
+
+        <div class="con">
+            <p class="po">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Address</span>
+            </p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKGJMXNxDqVGmckcSrFGbVhppDZFmQblFhSgRVNMLQXFzZZztxGqxmJxLDJbgmQJQTtWg"><p class="pi">oshousesales@gmail.com</p></a>
+
+            <p class="pe">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Number</span>
+            </p>
+            <p class="pr">+225 01678926289</p>
+            
+        </div>
+        </div>
+
+    </div>
+
+
+    <div class="card-auto">
+        <div class="inners">
+            <img src="buy 17.jpg">
+            <div class="inners1">
+            <h2>Utyui</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>10 Innes Ct, San Francisco, CA 94124, USA San Francisco</p>
+                <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+                <hr>
+
+               <h4> From   <strong>  XOF 5,657,890</strong> </h4>
+
+        </div>
+
+        <div class="con">
+            <p class="po">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Address</span>
+            </p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKGJMXNxDqVGmckcSrFGbVhppDZFmQblFhSgRVNMLQXFzZZztxGqxmJxLDJbgmQJQTtWg"><p class="pi">oshousesales@gmail.com</p></a>
+
+            <p class="pe">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Number</span>
+            </p>
+            <p class="pr">+225 01678926289</p>
+            
+        </div>
+        
+        </div>
+
+    </div>
+
+    <div class="card-auto">
+        <div class="inners">
+            <img src="buy 18.jpg">
+            <div class="inners1">
+            <h2>Zertyui</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>10 Innes Ct, San Francisco, CA 94124, USA San Francisco</p>
+                <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+                <hr>
+
+               <h4> From   <strong>  XOF 5,657,890</strong> </h4>
+
+        </div>
+
+        <div class="con">
+            <p class="po">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email Address</span>
+            </p>
+            <a href="https://mail.google.com/mail/u/0/#inbox?compose=CllgCJlKGJMXNxDqVGmckcSrFGbVhppDZFmQblFhSgRVNMLQXFzZZztxGqxmJxLDJbgmQJQTtWg"><p class="pi">oshousesales@gmail.com</p></a>
+
+            <p class="pe">
+                <i class="fa-solid fa-phone"></i>
+                <span>Call Number</span>
+            </p>
+            <p class="pr">+225 01678926289</p>
+            
+        </div>
+        
+        </div>
+
+    </div>
+</div>
+
+
+
+
+  <h1>About Our Rental Services</h1>  
+
+  <p class="last">When managing house rentals, a sales agency should focus on small but important details that make a big difference. High-quality, bright photos showcasing multiple angles of each room, along with clear exterior and amenity shots, are essential. Listings should include precise descriptions such as square footage, number of bedrooms and bathrooms, parking availability, included appliances, and pet policies. Highlighting unique features like balconies, gardens, fireplaces, or renovated spaces can set a property apart. It's important to provide accurate pricing, covering rent, deposits, and any extra fees, and to clearly state the move-in date and rental terms, including lease durations and renewal options. Agencies should also offer easy contact methods with quick response promises, and if possible, virtual tours or video walkthroughs to boost interest. Including neighborhood highlights—such as nearby public transport, schools, shops, and parks—adds value to the listing. Finally, adding trust signals like licensing details, tenant testimonials, and links to online reviews builds credibility and makes potential renters feel confident in choosing the agency.</p>
+
+
+
+  <h5>Where we are located <span><i id="one" class="fa-solid fa-map-location-dot"></i><i id="two" class="fa-solid fa-down-long"></i></span></h5>
+  <div class="lasts">
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7945.153639810918!2d-3.9450518499973173!3d5.32850182342094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xfc1edbac8b1fc55%3A0xc11ffcdb77a085d6!2sM&#39;badon%2C%20Abidjan!5e0!3m2!1sen!2sci!4v1745840089929!5m2!1sen!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+   
+    <a href="https://www.google.com/maps/dir//M'badon+Abidjan/@5.3284535,-3.9349324,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfc1edbac8b1fc55:0xc11ffcdb77a085d6!2m2!1d-3.9349324!2d5.3284535?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"><div class="img1">
+       <img src="lasts.jpg">
+    </div></a>
+  </div>
+
+  <a href="https://www.google.com/maps/dir//M'badon+Abidjan/@5.3284535,-3.9349324,15z/data=!4m8!4m7!1m0!1m5!1m1!1s0xfc1edbac8b1fc55:0xc11ffcdb77a085d6!2m2!1d-3.9349324!2d5.3284535?entry=ttu&g_ep=EgoyMDI1MDQyMy4wIKXMDSoJLDEwMjExNDUzSAFQAw%3D%3D"><i id="last" class="fa-solid fa-location-dot"></i></a>
+
+  <footer>
+    <a href="#"><ul class="three">
+        <li>About us</li>
+        <li>Career</li>
+        <li>Accessibility</li>
+        <li>Terms of use</li>
+    </ul></a>
+    <a href="#"><ul class="four">
+        <li href="services.html">App help</li>
+        <li>Rentals</li>
+        <li>Advertise with us</li>
+        <li>Join our team</li>
+        <li>Cookie policy</li>
+    </ul></a>
+
+    <div class="socialIcons">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+    </div>
+
+    <img src="C:\Users\asana\OneDrive\Pictures\Screenshots\Screenshot 2025-04-04 101427.png" style="width: 100px;">
+    <div class="footerBottom">
+        <p>Copyright &copy;2025;OS House Sales</p>
+        
+
+  </div>
+</footer>
+    
+</body>
+</html>

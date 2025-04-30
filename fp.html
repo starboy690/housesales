@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <title>OS House Sales</title>
+    <style>
+        *{
+            padding: 0; 
+            margin: 0;
+
+        }
+        nav.navbar{
+            background-color: #2D4930;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            line-height: 270%;
+
+        }
+        nav.navbar .logo img{
+            width: 80px;
+           position: absolute;
+           margin-top: 5px;
+           margin-right: -70px;
+           margin-left: 25px;
+          
+
+        }
+        nav.navbar ul{
+            display: flex;
+            float: right;
+            margin-right: 90px;
+            text-decoration: none;
+            padding-top: 24px;
+
+        }
+        nav ul li{
+            display: inline;
+            font-size: 19px;
+            color: #E0CD95;
+            margin: 0 15px;
+            margin-top: 7px;
+        }
+        nav ul li:hover{
+            background-color: rgba(20, 223, 20, 0.875);
+            border: 5px ;
+            border-radius: 3px;
+        }
+
+        
+         nav .one i{
+            float: right;
+            margin-right: -368px;
+            text-decoration: none;
+            padding-top: 22px;
+            margin-top: 9px;
+            font-size: 30px;
+           
+
+        }
+         nav .one a i {
+            color: black;
+        }
+        nav .one a i :hover{
+            columns: red;
+        }
+
+        nav a{
+            text-decoration: none;
+        }
+        
+        nav.navbar div.two {
+            font-size: 16px;
+            margin-left: 450px;
+            padding-top: 75px;
+            
+            
+        }
+        .navbar .two .paragraph1{
+            font-size: 30px;
+            color: #E0CD95;
+            margin-left: 65px;
+
+        }
+        .navbar .two .paragraph2{
+            font-size: 20px;
+            color: white;
+            margin-left: 45px;
+
+        }
+        .navbar .two button{
+            background-color: #77573ba8;
+            font-size: 14px;
+            color: white;
+            border: 5px;
+            border-radius: 4px;
+            margin-left: 155px;
+            width: 180px;
+            height: 28px;
+           
+        }
+
+        div.three{
+            display: flex;
+            margin: 10px;
+        }
+       
+        div.three div.card-auto{
+            width: 250px;
+            padding: 25px;
+            padding-left: 65PX;
+            background-color: #82827a7b;
+            border-radius: 10px;
+            margin:  75px;
+            margin-right: 50px;
+
+        }
+        div.three .paragraph3{
+            font-size: 20px;
+            color: rgba(244, 187, 2, 0.764);
+            margin-left: 50px;
+
+
+        }
+        div.three  i{
+            font-size: 25px;
+            color: rgba(14, 85, 239, 0.767);
+            padding-left: 90px;
+            padding-top: 20px;
+        }
+        div.three button.RE{
+            background-color: rgba(20, 223, 20, 0.712);
+            color: rgb(246, 235, 237);
+            margin-left: 42px;
+            border: 6px;
+            width: 130px;
+            height: 24PX;
+        }
+
+        div.three button.RA{
+            background-color: rgba(20, 223, 20, 0.712);
+            color: rgb(246, 235, 237);
+            margin-left: 45px;
+            border: 6px;
+            width: 130px;
+            height: 24PX;
+           
+        }
+        div.three button.RZ{
+            background-color: rgba(20, 223, 20, 0.712);
+            color: rgb(246, 235, 237);
+            margin-left: 45px;
+            border: 6px;
+            width: 130px;
+            height: 24PX;
+
+           
+        }
+
+
+        div.three .paragraph4{
+            font-size: 12px;
+            color: white;
+            text-align: center;
+            margin-left: -28px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        div.three .paragraph5{
+            font-size: 20px;
+            color:rgba(244, 187, 2, 0.764);
+            margin-left: 25px;
+            margin-left: 50px;
+
+
+        }
+        div.three .paragraph6{
+            font-size: 12px;
+            margin-left: -28px;
+            font-family:  'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color: rgb(238, 238, 233);
+            text-align: center;
+
+        }
+        
+        div.three .paragraph7{
+            font-size: 20px;
+            color: rgba(244, 187, 2, 0.764);
+            margin-left: 50px;
+        }
+
+        div.three .paragraph8{
+            font-size: 12px;
+            margin-left: -28px;
+            color: white;
+            text-align: center;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        section{
+            width: 100%;
+        }
+        div.four{
+            display: flex;
+            width: 100%;
+          
+        }
+
+
+        div.four .io img{
+            border-radius: 8px;
+            margin-left: 65px;
+            height: 180PX;
+             
+        }
+        div.four .io{
+            margin-left: 30px;
+            
+        }
+        div.four .io .paragraph1{
+            font-size: 25px;
+            color: #2D4930;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 32px;
+
+
+        }
+        div.four .io .paragraph2{
+            font-size: 18px;
+            color: #2D4930;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 18px;
+
+        }
+        div.four .ia{
+            margin-left: 30px;
+        }
+        div.four .ia img{
+            border-radius: 8px;
+            height: 180PX;
+            margin-left: 18px;
+
+        }
+        div.four .ia .paragraph1{
+            font-size: 25px;
+            color: #2D4930;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            
+        }
+        div.four .ia .paragraph2{
+            font-size: 18px;
+            color: #2D4930;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+        }
+        div.four .ib{
+            margin-left: 30px;
+        }
+
+        div.four .ib img{
+            height: 180PX;
+            border-radius: 8px;
+            margin-left: 80px;
+            
+        }
+        div.four .ib .paragraph1{
+            font-size: 25px;
+            color: #2D4930;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: 65px;
+        }
+        div.four .ib .paragraph2{
+            font-size: 18px;
+            color: #2D4930;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-left: 65px;
+        }
+        div.five{
+            margin-left: 45px;
+            padding-top: 42px;
+        }
+        div.five h1{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        div.five p{
+            font-size: 18px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding-top: 7px;
+
+        }
+        div.six{
+            display: flex;
+            padding-top: -5px;
+            margin-left: -12px;
+
+        }
+        a{
+            text-decoration: none;
+        }
+        div.six .card-auto{
+            width: 250px;
+            
+            background-color: #50504857;
+            border-radius: 10px;
+            margin:  60px;
+            margin-right: 15px;
+            height: 245px;
+        }
+        div.six .card-auto img{
+            height: 120px;
+            width: 180px;
+            margin-left: 15px;
+        }
+        .card-auto .er{
+            font-size: 25px;
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin-right: 24px;
+           
+            
+        }
+        .card-auto .ed{
+            font-size: 17px;
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            margin-right: 9px;
+            padding-top: 12px;
+        }
+        .card-auto .ex{
+            font-size: 14px;
+            color: rgba(36, 2, 2, 0.868);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+            margin-left: 18px;
+           margin-top: -18px;
+        }
+        .card-auto .only i{
+            font-size: 19px;
+            padding-top: 19px;
+            color: rgb(245, 16, 16);
+          
+        }
+        .card-auto .ar{
+            font-size: 18px;
+            color: rgba(67, 10, 10, 0.871);
+            margin-top: -90px;
+            display: flex;
+            margin-left: 165px;
+        }
+        .card-auto .az{
+            font-size: 18px;
+            color: rgba(67, 10, 10, 0.871);
+            margin-top: -92px;
+            display: flex;
+            margin-left: 184px;
+        }
+        .card-auto .ai{
+            color: rgba(255, 0, 4, 0.675);
+            font-size: 18px;
+            margin-left: 209px;
+            margin-top: -19px;
+        }
+        .card-auto .ay{
+            color: rgba(255, 0, 4, 0.675);
+            font-size: 18px;
+            margin-left: 217px;
+            margin-top: -16px;
+        }
+        .seven{
+            display: flex;
+            background-color: white;
+            width: 100%;
+            margin-top: 12px;
+            height: 370px;
+            border-radius: 15px;
+            
+
+        }
+        .seven img{
+            width: 470px;
+            margin-left: 40px;
+            margin-top: 27px;
+            height: 270px;
+            padding-left: 22px;
+
+        }
+       
+        .seven .op h1{
+            font-size: 30px;
+            color: rgb(7, 11, 11);
+            text-align: center;
+           padding-top: 40px;
+           margin-left: 95px;
+            
+        }
+        .seven .op p{  
+            font-family: Arial, Helvetica, sans-serif;
+            padding-top: 30px;
+            font-size: 18px;
+            text-align: center;
+            color: black;
+            padding-left: 50px;
+            margin-left: 67px;
+
+
+        }
+        .flexwrap{
+            margin: 30px;
+            background-color: #c8bceb;
+            border-radius: 15px;
+            height: 400px;
+
+
+        }
+        .flexwrap img{
+            margin-left: 25px;
+            padding-top: 30px;
+        }
+        .flexwrap .flexcontainer{
+            margin-left: 500px;
+           
+            }
+        .flexwrap .flexcontainer h2{
+            font-size: 29px;
+            text-align: left;
+            margin-top: -170px;
+            margin-left: 32px;
+        }
+        .flexwrap .flexcontainer p{
+            font-size: 16px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: left;
+            padding-top: 19px;
+            margin-left: 32px;
+        }
+        .social{
+           
+            padding-left: 600px;
+            margin-top: 40px;
+        }
+        .social button.one{
+            border: 1px solid red;
+            border-radius: 3px;
+            background-color: #4b4945;
+            height: 45px;
+        }
+        .social button.one i{
+            color: aquamarine;
+            margin-left: -58px;
+            font-size: 20px;
+           
+        }
+        .social button.one p{
+            color: white;
+            margin-left: 42px;
+            margin-top: -18px;
+        }
+        .social button.one strong{
+            color: white;
+            font-size: 14px;
+            text-align: right;
+            margin-left: 12px;
+
+        }
+        .social button.two{
+            border: 1px solid red;
+            border-radius: 3px;
+            background-color: #4b4945;
+            height: 45px;
+            width: 170px;
+            margin-top: 14px;
+            margin-bottom: 9px;
+        }
+        
+        .social button.two i{
+            color: aquamarine;
+            margin-left: -87px;
+            font-size: 29px;
+            padding-top: 7px;
+           
+        }
+        .social button.two p{
+            color: white;
+            margin-left: 35px;
+            margin-top: -28px;
+        }
+        .social button.two strong{
+            color: white;
+            font-size: 14px;
+            text-align: right;
+            margin-left: 32px;
+
+
+        }
+        .eight{
+            display: flex;
+            width: 100%;
+        }
+         h1{
+            margin-left: 45px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+          
+        }
+      
+
+        .eight img{
+            margin-left: 21px;
+            margin-top: 21px;
+
+            
+        }
+
+        .eight p{
+            font-size: 19px;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 85px;
+            padding-left: 40px;
+
+        }
+
+
+        
+
+        footer{
+            background-color: #2D4930;
+            width: 100%;
+            height: 300px;
+            margin-top: 45px;
+        }
+        footer ul.one{
+            display: flex;
+            margin-top: 25px;
+            
+        }
+        footer ul.one li{
+            display: inline;
+            padding-top: 45px;
+            padding-left: 34px;
+            font-size: 15px;
+            color: white;
+            margin: 0 45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        footer ul.one li:hover{
+            text-decoration: underline solid 5px rgba(203, 14, 14, 0.682 );
+        }
+
+        footer ul.two{
+            display: flex;
+            margin-top: 25px;
+            
+        }
+        footer ul.two li{
+            display: inline;
+            padding-top: 45px;
+            padding-left: 34px;
+            font-size: 15px;
+            color: white;
+            margin: 0 45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        footer ul.two li:hover{
+            text-decoration: underline solid 5px rgba(203, 14, 14, 0.682 );
+        }
+        .socialIcons i{
+            padding-top: 45px;
+            padding-left: 51px;
+            font-size: 26px;
+            color: rgb(27, 3, 3);
+            margin: 0 25px;
+
+        }
+        .socialIcons p{
+            font-size: 20px;
+            color: white;
+            margin-left: 550px;
+            padding-left: 85px;
+            margin-top: -28px;
+        }
+        .socialIcons p:hover{
+            color: red;
+        }
+        .socialIcons a{
+            text-decoration: none;
+        }
+
+        footer img{
+            margin-left: 1375Px;
+            margin-top: -35px;
+        }
+        footer .footerBottom{
+            margin-left: 1160px;
+            margin-top: -45px;
+            font-size: 13px;
+            color: antiquewhite;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+       
+        <div class="logo"><a href="#"><img src="C:\Users\asana\OneDrive\Pictures\Screenshots\Screenshot 2025-04-04 101427.png"></a></div>
+        <ul>
+            <a href="#"><li>HOME</li></a>
+            <a href="services.html" target="_self"><li>SERVICES</li></a>
+            <a href="portfolio.html"><li>PORTFOLIO</li></a>
+            
+        </ul>
+        <div class="one">
+            <a href="services.html"><i class="fa-solid fa-circle-user"></i></a>
+        </div>
+        
+        <div class="two">
+            <p class="paragraph1">WE EMPOWER BUSINESS</p>
+            <p class="paragraph2">We're dedicated to helping our clients reach their Goals</p>
+            <a href="services.html"><button >LEARN MORE</button></a>
+        </div>
+
+
+        <div class="three">
+            <div class="card-auto">
+            <i class="fa-solid fa-cart-shopping"></i>
+                <p class="paragraph3">Buy A House</p>
+                <p class="paragraph4">A Real house sales business
+                    that provides you with a clear
+                    breakdown of sales so you can
+                    avoids surprise expenses</p>
+                    <a href="portfolio.html"><button class="RE">Find a Local Agent</button></a>
+
+           
+
+            </div>
+
+            <div class="card-auto">
+                <i class="fa-solid fa-house"></i>
+               
+                    <p class="paragraph5">Sell A House</p>
+                    <p class="paragraph6">No matter what path you take to sell your home, we can help you navigate a successful sale </p>
+                     <a href="portfolio.html"><button class="RA">See your Options</button></a> 
+    
+                </div>
+
+                <div class="card-auto">
+                    <i class="fa-solid fa-store"></i>
+                   
+                        <p class="paragraph7">Rent A House</P>
+                        <p class="paragraph8">We're creating a seamless online 
+                            experience - from shopping on the 
+                            largest rental network , to applying ,
+                            to paying rent 
+                            </p>
+                            <a href="services.html"><button class="RZ">Find Rental</button></a>
+        
+                    </div>
+        </div>
+
+    </naV>
+
+    <section>
+    
+        
+        <div class="four">
+            <div class="io">
+            <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\figma.jpg" style="width: 200px;">
+            <p class="paragraph1">PROVEN TRACK RECORD</P>
+            <p class="paragraph2">We have a history of helping our clients reach their goals successfully</P>
+            </div>
+            <div class="ia">
+            <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\FIGMA 3.jpeg" style="width: 250px;">
+            <p class="paragraph1">TRUSTED PARTHERSHIP</P>
+            <p class="paragraph2">We believe in building strong, long term relationship</p>
+            </div>
+            <div class="ib">
+            <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\figma 2.jpg" style="width: 350px;">
+            <p class="paragraph1">FORWARD THINKING APPROACH</P>
+            <p class="paragraph2">We are constantly innovating to stay ahead of a curve</p>
+            </div>
+        </div>
+      
+
+        <br>      
+        <div class="five">
+            <h1>POPULAR IN ABIDJAN</h1>
+            <p>The most viewed and favourite home in the past day</p>    
+
+        </div>
+        <div class="six">
+            <a href="services.html"><div class="card-auto">
+                <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\FIGMA 5.webp">
+                <p class="er">XOF 985,000</p>
+                <p class="ed">1 Bed  3 Baths  900 Sqrt ft </p>
+                <div class="only">
+                <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <p class="ex">Marcory, Abidjan, Côte d'Ivoire</p>
+                <div class="ar">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+
+                <div class="ai">
+                <i class="fa-solid fa-heart"></i>
+                </div>
+           
+            </div></a>
+
+            <a href="services.html"><div class="card-auto">
+                <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\er.jpg">
+                <p class="er">XOF 1,985,000</p>
+                <p class="ed">3 Bed  4 Baths  2,900 Sqrt ft </p>
+                <div class="only">
+                <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <p class="ex">Cocody, Abidjan, Côte d'Ivoire</p>
+
+                <div class="az">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+
+                <div class="ay">
+                    <i class="fa-solid fa-heart"></i>
+                    </div>
+               
+            </div></a>
+
+            <a href="services.html"><div class="card-auto">
+                <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\ed.jpeg">
+                <p class="er">XOF 3,185,000</p>
+                <p class="ed"> 5 Bed  6 Baths  1,500 Sqrt ft </p>
+                <div class="only">
+                <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <p class="ex">Cocody, Abidjan, Côte d'Ivoire</p>
+                <div class="az">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+
+                <div class="ay">
+                    <i class="fa-solid fa-heart"></i>
+                    </div>
+                
+            </div></a>
+
+            <a href="services.html"><div class="card-auto">
+                <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\FIGMA 6.jpeg">
+                <p class="er">XOF 2,185,000</p>
+                <p class="ed"> 2 Bed  3 Baths  1,500 Sqrt ft </p>
+                <div class="only">
+                <i class="fa-solid fa-location-dot"></i>
+                </div>
+                <p class="ex">M'Badon, Abidjan, Côte d'Ivoire</p>
+                <div class="az">
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+
+                <div class="ay">
+                    <i class="fa-solid fa-heart"></i>
+                    </div>
+           
+            </div></a>
+
+        
+    </div>
+
+        <div class="seven">
+                <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\five.jpg">
+                <div class="op">
+                <h1>We are one of the reliable house agency in Côte d'Ivoire</h1>
+               
+                <p>We are a client-focused real estate agency specializing in residential property sales. 
+                    With a strong understanding of local markets and a passion for helping people find their perfect home, we offer personalized service, expert advice, and a seamless buying or selling experience.
+                    From first-time buyers to seasoned investors, our team is committed to delivering results with transparency, professionalism, and care. 
+                    Whether you're listing your property or searching for your dream home, we're here to guide you every step of the way.</p>
+                </div>
+              
+        </div>
+        <div class="marketing">
+            <div class="flexwrap">
+                <div class="image-container">
+                    <img src="C:\Users\asana\OneDrive\Pictures\Screenshots\Screenshot 2025-04-08 214046.png">
+                    <div class="content">
+                        <div class="flexcontainer">
+                            <h2>OS House Sales on Mobile Phones and Tablet</h2>
+
+
+                            <p>Get all of Côte d'Ivoire's leading Estate Agent properties for sale or to rent on your Android or Apple device. 
+                                With OS House Sales' intuitive interface, you can find and manage your favourite properties with ease. Download the app to get started.</p>
+                        </div>
+                        <div class="social">
+                            <a href="https://play.google.com/store/apps/details?id=com.zillow.android.zillowmap&hl=en&pli=1" target="_top"><button class="one">
+                                <i class="fa-brands fa-google-play"></i><p>Get it on</p>
+                                <strong>GOOGLE PLAY STORE</strong></button></a>
+
+                                <a href="https://apps.apple.com/us/app/zillow-real-estate-rentals/id310738695" target="_self"><button class="two">
+                                <i class="fa-brands fa-apple"></i><p>Get it on</p>
+                                <strong>APP STORE</strong></button></a>
+                            
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>ABOUT US</h1>
+        <div class="eight">
+            
+
+            <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\figma 4.jpg">
+
+
+           
+                <p >At OS HOUSE SALES, we make buying and selling homes simple and stress-free. With expert agents, market insights, and personalized service, we help you find the perfect home or get the best value for your property. Let's turn your real estate goals into reality.We are a client-focused real estate agency specializing in residential property sales. With a strong understanding of local markets and a passion for helping people find their perfect home, we offer personalized service, expert advice, and a seamless buying or selling experience. From first-time buyers to seasoned investors, our team is committed to delivering results with transparency, professionalism, and care. Whether you're listing your property or searching for your dream home, we're here to guide you every step of the way.</p>
+
+
+                
+
+            
+        </div>
+        
+
+    </section>
+
+    <footer>
+        <a href="#"><ul class="one">
+            <li>About us</li>
+            <li>Career</li>
+            <li>Accessibility</li>
+            <li>Terms of use</li>
+        </ul></a>
+        <a href="#"><ul class="two">
+            <li href="services.html">App help</li>
+            <li>Rentals</li>
+            <li>Advertise with us</li>
+            <li>Join our team</li>
+            <li>Cookie policy</li>
+        </ul></a>
+
+        <div class="socialIcons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            <i class="fa-solid fa-link"></i> <a href="#"><p>www.oshousesales.com</p></a>
+        </div>
+
+        <img src="C:\Users\asana\OneDrive\Pictures\Screenshots\Screenshot 2025-04-04 101427.png" style="width: 100px;">
+        <div class="footerBottom">
+            <p>Copyright &copy;2025;OS House Sales</p>
+            
+    
+      </div>
+    </footer>
+</body>
+</html>

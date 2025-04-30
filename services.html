@@ -1,0 +1,1107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        *{
+            padding: 0; 
+            margin: 0;
+
+        }
+        nav.navbar{
+            background-color: #2D4930;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            height: 300px;
+
+        }
+        nav.navbar .logo img{
+            width: 240px;
+           position: absolute;
+           margin-top: 36px;
+           margin-right: -70px;
+           margin-left: 620px;
+          
+
+        }
+        nav.navbar ul.one{
+            float: left;
+            padding-top: 155px;
+            margin-left: 390px;
+            list-style: none;
+
+
+          
+           
+        }
+        nav.navbar ul.one li{
+            color: #E0CD95;
+            font-size: 19px;
+        }
+        nav ul.one li:hover{
+          text-decoration: underline 2px solid rgba(20, 223, 20, 0.875);
+            border: 5px ;
+            border-radius: 3px;
+
+        }
+        ul.one a {
+            text-decoration: none;
+        }
+
+        nav.navbar ul.two{
+            display: flex;
+            float: right;
+            margin-right: 290px;
+            padding-top: 152px;
+
+        }
+         ul.two li{
+            display: inline;
+            font-size: 19px;
+            color: #E0CD95;
+            margin: 0 30px;
+            margin-top: 7px;
+        }
+         ul.two li:hover{
+            text-decoration: underline 2px solid rgba(20, 223, 20, 0.875);
+            border: 5px ;
+            border-radius: 3px;
+        }
+        ul.two a{
+            text-decoration: none;
+        }
+        .two i{
+            float: inline-end;
+            padding-top: 147px;
+            font-size: 34px;
+            margin-right: -365px;
+            color: black;
+        }
+
+        .two i:hover{
+          color: red;
+        }
+      
+
+        .back-video{
+          position: absolute;
+          z-index: -1;
+          top: 0;
+          margin-top: 298px;
+          object-fit: cover;
+          width: 100%;
+          height: 100%;
+      }
+
+      section{
+        margin-top: 172px;
+      }
+       
+
+          .intro{
+            width: 100%;
+            background-color: rgba(135, 155, 71, 0.426);
+            height: 430px;
+           
+           
+          
+          }
+          .one{
+            display: flex;
+            padding: 55px;
+            margin: 0 15px;
+         
+          }
+          .intro .header{
+            font-size: 30px;
+            text-align: center;
+            padding-top: 18px;
+
+           
+          }
+         
+          .one1{
+            padding: 19px;
+            margin-left: -42px;
+
+          }
+          .one1 i {
+            font-size: 35px;
+            color: #5f0ace99;
+            padding-bottom: 20px;
+            padding-left: 100px;
+          }
+          .one .one1 p{
+            font-size: 28px;
+            color: #2D4930;
+            text-align: center;
+
+          }
+
+          .one2{
+            padding: 19px;
+            margin-left: 120px;
+          }
+          .one2 i {
+            font-size: 38px;
+            color: #0e0e0ee4;
+            padding-bottom: 18px;
+            padding-left: 75px;
+          }
+          
+
+          .one .one2 p{
+            font-size: 28px;
+            color: #2D4930;
+            text-align: center;
+
+          }
+
+          .one3{
+            padding: 19px;
+            margin-left: 130px;
+          }
+
+          .one3 i {
+            font-size: 35px;
+            color: #ef410799;
+            padding-bottom: 18px;
+            padding-left: 100px;
+          }
+
+
+          .one .one3 p{
+            font-size: 28px;
+            color: #2D4930;
+            text-align: center;
+          }
+
+
+          .one4{
+            padding: 19px;
+            margin-left: 130px;
+          }
+          .one4 i {
+            font-size: 35px;
+            color: #e72709cc;
+            padding-bottom: 18px;
+            padding-left: 110px;
+          }
+
+          .one .one4 p{
+            font-size: 28px;
+            color: #2D4930;
+            text-align: center;
+          }
+           
+
+          .two3{
+            display: flex;
+
+          }
+
+          .two1{
+            padding: 19px;
+            margin-left: 29px;
+          }
+          .two1 i{
+            font-size: 35px;
+            color: #ff0048e3;
+            margin-left: 99px;
+            padding-bottom: 15px;
+          }
+
+          .two1 p{
+            font-size: 28px;
+            color: #2D4930;
+            text-align: center;
+          }
+         
+          .two2{
+            margin-left: 125px;
+            padding: 19px;
+          
+          }
+
+          .two2 i{
+            font-size: 35px;
+            color: #0b6ae7e3;
+            margin-left: 54px;
+            padding-bottom: 12px;
+          }
+
+          .two2 p{
+            font-size: 28px;
+            color: #2D4930;
+            text-align: center;
+          }
+
+          h2{
+            margin-left: 42px;
+            margin-top: 15px;
+          }
+
+          .agents{
+            display: flex;
+            margin-top: 22px;
+            margin-left: 20px;
+          }
+
+          div.card-auto{
+            width: 300px;
+            border: 1px solid rgb(189, 235, 237);
+            padding: 2px;
+            border-radius: 10px;
+            margin: 30px;
+            
+            
+          
+          
+          }
+          .card-auto img{
+            width: 100%;
+            border-radius: 7px;
+          
+          }
+          .card-auto p{
+            font-size: 20px;
+          }
+    
+
+          .card-auto .is{
+            color: #FFD700;
+            padding-top: 5px;
+          }
+
+          
+           a {
+            text-decoration: none;
+            
+          }
+          a p{
+            color: black;
+          }
+
+          .agent2{
+            display: flex;
+            margin-top: 19px;
+            margin-left: 20px;
+          }
+
+
+          div.card-auto2{
+            width: 300px;
+            border: 1px solid rgb(189, 235, 237);
+            padding: 2px;
+            border-radius: 10px;
+            margin: 30px;
+            
+            
+          
+          
+          }
+          .card-auto2 img{
+            width: 100%;
+            border-radius: 7px;
+          
+          }
+          .card-auto2 p{
+            font-size: 20px;
+          }
+    
+
+          .card-auto2 .is{
+            color: #FFD700;
+            padding-top: 5px;
+          }
+
+
+          a{
+            text-decoration: none;
+          }
+          
+
+          footer{
+            background-color: #2D4930;
+            width: 100%;
+            height: 306px;
+            margin-top: 45px;
+        }
+        footer ul.three{
+            display: flex;
+            margin-top: 25px;
+            
+        }
+        footer ul.three li{
+            display: inline;
+            padding-top: 45px;
+            padding-left: 34px;
+            font-size: 15px;
+            color: white;
+            margin: 0 45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        footer ul.four{
+            display: flex;
+            margin-top: 25px;
+            
+        }
+        footer ul.four li{
+            display: inline;
+            padding-top: 45px;
+            padding-left: 34px;
+            font-size: 15px;
+            color: white;
+            margin: 0 45px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        .socialIcons i{
+            padding-top: 65px;
+            padding-left: 51px;
+            font-size: 26px;
+            color: rgb(27, 3, 3);
+            margin: 0 25px;
+
+        }
+        .socialIcons p{
+            font-size: 20px;
+            color: white;
+            margin-left: 550px;
+            padding-left: 85px;
+            margin-top: -28px;
+        }
+        .socialIcons p:hover{
+            color: red;
+        }
+        .socialIcons a{
+            text-decoration: none;
+        }
+
+        footer img{
+            margin-left: 1375Px;
+            margin-top: -35px;
+        }
+        footer .footerBottom{
+            margin-left: 1160px;
+            margin-top: -45px;
+            font-size: 13px;
+            color: antiquewhite;
+        }
+
+        h3{
+          margin-left: 34px;
+          margin-top: 45px;
+          
+        }
+
+        .ze {
+          display: flex;
+          margin-top: 45px;
+
+        }
+
+        .ze img{
+          margin-top: 24px;
+        }
+
+        .zr{
+          display: block;
+        }
+        .zr h4{
+          text-align: center;
+          margin-top: 56px;
+          font-size: 22px;
+
+        }
+
+        .zr p{
+        font-size: 18px;
+        text-align: center;
+        padding-top: 32px;
+        padding-left: 63px;
+         
+        }
+     
+
+       .subs{
+          width: 45%;
+          margin-top: 310px;
+          height: 260px;
+          background-color: rgba(255, 255, 255, 0.592);
+          margin-left: 40px;
+          border-radius: 15px;
+
+        }
+
+        a{
+          text-decoration: none;
+        
+        }
+
+        
+
+
+        .subs h2{
+          font-size: 38px;
+          padding-top: 34px;
+          font: bolder;
+        }
+        .subs p{
+          font-size: 24px;
+          padding-top: 21px;
+          padding-left: 19px;
+          color: black;
+        }
+
+        .subs .subs2{
+          width: 34%;
+          background-color: rgb(50, 79, 227);
+          height: 60px;
+          margin-left: 370px;
+          margin-top: 26px;
+          border-radius: 20px;
+        }
+        .subs2 p{
+          padding-left: 11px;
+          padding-top: 15px;
+          color: white;
+          text-align: center;
+          font-size: 28px;
+        }
+        .subs2:hover{
+          background-color:  rgb(5, 5, 239);
+          color: white;
+          box-shadow: black;
+        }
+         
+         
+        .special{
+          margin-top: 50px;
+        }
+
+
+        .final{
+          background-color: white;
+          display: flex;
+          margin-top: 68px;
+          width: 100%;
+          border-radius: 10px;
+        }
+
+        .final1{
+          background-color: blue;
+          width: 100px;
+          height: 20px;
+          margin-left: 192px;
+          margin-top: 46px;
+          
+
+        }
+
+        .words{
+          display: block;
+          padding-top: 72px;
+          margin-left: 56px;
+       
+
+        }
+
+        .words .par1{
+          font-size: 31px;
+          padding-bottom: 17px;
+          margin-left: -182px;
+        }
+
+        .words p{
+          font-size: 18px;
+          padding-top: 22px;
+          margin-left: -182px;
+        }
+
+        .final img{
+          margin-left: 122px;
+          border-radius: 12px;
+        }
+
+        .final2{
+          background-color: white;
+          display: flex;
+          margin-top: 98px;
+          width: 100%;
+          border-radius: 10px;
+          height: 290px;
+
+        }
+
+        .final2 img{
+          height: 290px;
+          margin-left: 180px;
+        }
+
+       
+
+        
+        .final3{
+          background-color: rgb(0, 255, 115);
+          width: 100px;
+          height: 20px;
+          margin-top: 19px;
+          margin-left: 228PX;
+        }
+
+        .words1{
+          display: block;
+          margin-top: 56px;
+          margin-left: 45px;
+          
+       
+
+        }
+
+        .words1 .par2{
+          font-size: 31px;
+          padding-bottom: 17px;
+          margin-left: -182px;
+        }
+
+        .words1 p{
+          font-size: 18px;
+          padding-top: 22px;
+          margin-left: -182px;
+        }
+
+
+        .final4{
+          background-color: white;
+          display: flex;
+          margin-top: 68px;
+          width: 100%;
+          border-radius: 10px;
+          margin-bottom: 94px;
+        }
+
+        .final5{
+          background-color: rgb(29, 152, 229);
+          width: 100px;
+          height: 20px;
+          margin-left: 192px;
+          margin-top: 46px;
+          
+
+        }
+
+        .words2{
+          display: block;
+          padding-top: 72px;
+          margin-left: 56px;
+       
+
+        }
+
+        .words2 .par3{
+          font-size: 31px;
+          padding-bottom: 17px;
+          margin-left: -182px;
+        }
+
+        .words2 p{
+          font-size: 18px;
+          padding-top: 22px;
+          margin-left: -182px;
+        }
+
+        .final4{
+          background-color: white;
+          display: flex;
+          margin-top: 98px;
+          width: 100%;
+          border-radius: 10px;
+          height: 290px;
+
+        }
+
+        .final4 img{
+          height: 290px;
+          margin-left: 120px;
+          margin-top: 22px;
+        }
+
+        .lastman{
+          background-color: rgb(20, 52, 212);
+          width: 420px;
+          margin-left: 589px;
+          height: 80px;
+          border-radius: 42px;
+
+        }
+
+        .lastman p{
+          color: white;
+          font-size: 26px;
+          text-align: center ;
+          padding-top: 24px;
+
+
+        }
+
+        .lastman:hover{
+          background-color: rgb(9, 9, 254);
+        }
+
+       
+
+       
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+       
+        <div class="logo"><a href="portfolio.html"><img src="C:\Users\asana\OneDrive\Pictures\Screenshots\Screenshot 2025-04-04 101427.png"></a></div>
+
+        <ul class="one">
+            <a href="portfolio.html" target="_self"><li>HOME</li></a>
+        </ul>
+
+        <ul class="two">
+            
+            <a href="services.html" target="_self"><li>SERVICES</li></a>
+            <a href="portfolio.html"><li>PORTFOLIO</li></a>
+            
+        </ul>
+        <div class="two">
+            <a href="login.html"><i class="fa-solid fa-circle-user"></i></a>
+        </div>
+
+        </nav>
+
+
+        <div class="center">
+
+
+          <video autoplay loop muted plays-inline class="back-video">
+            <source src="C:\Users\asana\Downloads\service.mp4" type="video/mp4">
+        </video>
+
+        </div>
+          <div class="subs">
+            <h2>OS House Sales Agents Assistance <i class="fa-solid fa-headset"></i></h2>
+            <p>Free listing for various types of properties, including new homes, second-hand properties, and rentals.</p>
+
+         <a href="contact.html"><div class="subs2">
+            <p>GET STARTED</p>
+          </div></a>
+          
+        
+          
+
+        </div>
+
+       
+
+            <br>
+
+            
+          
+                <br>
+                <section>
+
+                <div class="intro">
+                    <div class="one5">
+                        <p class="header">Our full-service agents handle everything so you can relax</p>
+                    </div>
+                
+                    <div class="one">
+                  
+
+                     <div class="one1">
+                     <i class="fa-solid fa-magnifying-glass-chart"></i>
+                     <p>Comparative market sales</p>
+                        </div>
+
+                        <div class="one2">
+                        <i class="fa-solid fa-user-tie"></i>
+                        <p>Professional agents</p>
+                        </div>
+
+                        <div class="one3">
+                        <i class="fa-solid fa-file-signature"></i>
+                        <p>Contract & Negiotiation</p>
+                        </div>
+
+                        <div class="one4">
+                        <i class="fa-solid fa-helmet-safety"></i>
+                        <p>Contractors recommendation</p>
+                        </div>
+                    </div>
+
+                    <div class="two3">
+
+
+                       <div class="two1">
+                        <i class="fa-solid fa-building-shield"></i>
+                        <p>Properties protection</p>
+                       </div>
+
+                       <div class="two2">
+                        <i class="fa-solid fa-handshake"></i>
+                        <p>100% reliable</p>
+                       </div>
+
+                        
+                    </div>
+
+                </div>
+
+
+                <div class="special">
+
+                <H2>AGENTS SPECIALIZING IN YOUR AREA</H2>
+
+
+
+                <div class="agents">
+
+                <a href="#"><div class="card-auto">
+                  <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\agent 1.jpg" style="height: 210px;">
+                  <div>
+                    <p>
+                      <b>Name:</b>
+                      <span>Rosemary Welbeck</span>
+                    </p>
+
+                    <p>
+                      31 houses sold in Abidjan
+                    </p>
+                    <p>
+                      9 years experience
+                    </p>
+                    <p>
+                      <b>Price range:</b>
+                      <span>XOF 510,000</span>
+                    </p>
+                    <div class="is">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+
+                
+                <a href="#"><div class="card-auto">
+                  <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\agent 2.jpg" style="height: 210px;">
+                  <div>
+                    <p>
+                      <b>Name:</b>
+                      <span>Angela Green</span>
+                    </p>
+
+                    <p>
+                      15 houses sold in Riviéra 3
+                    </p>
+                    <p>
+                      6 years experience
+                    </p>
+                    <p>
+                      <b>Price range:</b>
+                      <span>XOF 450,000</span>
+                    </p>
+                    <div class="is">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+
+                
+                <a href="#"><div class="card-auto">
+                  <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\Agent 3.jpeg" style="height: 210px;">
+                  <div>
+                    <p>
+                      <b>Name:</b>
+                      <span>Dean Ambrose</span>
+                    </p>
+
+                    <p>
+                      11 houses sold in Cocody
+                    </p>
+                    <p>
+                      5 years experience
+                    </p>
+                    <p>
+                      <b>Price range:</b>
+                      <span>XOF 390,000</span>
+                    </p>
+                    <div class="is">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+              
+              <a href="#"><div class="card-auto">
+                <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\agent 8.webp"style="height: 210px;">
+                <div>
+                  <p>
+                    <b>Name:</b>
+                    <span>Jane Green</span>
+                  </p>
+
+                  <p>
+                    21 houses sold in Abidjan & Lagos
+                  </p>
+                  <p>
+                    9 years experience
+                  </p>
+                  <p>
+                    <b>Price range:</b>
+                    <span>XOF 510,000</span>
+                  </p>
+                  <div class="is">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+              </div>
+
+              <div class="agent2">
+
+                <a href="#"><div class="card-auto2">
+                  <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\AGENT 4.png" style="height: 210px;">
+                  <div>
+                    <p>
+                      <b>Name:</b>
+                      <span>Tina Blues</span>
+                    </p>
+
+                    <p>
+                      12  houses sold in Yamoussoukro
+                    </p>
+                    <p>
+                      3 years experience
+                    </p>
+                    <p>
+                      <b>Price range:</b>
+                      <span>XOF 340,000</span>
+                    </p>
+                    <div class="is">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star-half"></i>
+                    </div>
+                  </div>
+                </div>
+              </a>
+
+
+
+              
+              <a href="#"><div class="card-auto2">
+                <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\AGENT 5.png" style="height: 210px;">
+                <div>
+                  <p>
+                    <b>Name:</b>
+                    <span>Rodriquez Rexct</span>
+                  </p>
+
+                  <p>
+                    15 houses sold in M'Badon
+                  </p>
+                  <p>
+                    4 years experience
+                  </p>
+                  <p>
+                    <b>Price range:</b>
+                    <span>XOF 290,000</span>
+                  </p>
+                  <div class="is">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+
+
+            <a href="#"><div class="card-auto2">
+              <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\agent 7.jpg" style="height: 210px;">
+              <div>
+                <p>
+                  <b>Name:</b>
+                  <span>Giscilla Long</span>
+                </p>
+
+                <p>
+                  22  houses sold in Nairobi
+                </p>
+                <p>
+                  5 years experience
+                </p>
+                <p>
+                  <b>Price range:</b>
+                  <span>XOF 340,000</span>
+                </p>
+                <div class="is">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half"></i>
+                </div>
+              </div>
+            </div>
+          </a>
+
+
+          <a href="#"><div class="card-auto2">
+            <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\agent 6.png" style="height: 210px;">
+            <div>
+              <p>
+                <b>Name:</b>
+                <span>Mensah Kelvin</span>
+              </p>
+
+              <p>
+                12  houses sold in New York
+              </p>
+              <p>
+                6 years experience
+              </p>
+              <p>
+                <b>Price range:</b>
+                <span>XOF 340,000</span>
+              </p>
+              <div class="is">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+              </div>
+            </div>
+          </div>
+        </a>
+
+
+    
+            </div>
+          </div>
+
+
+          <div class="final">
+            <div class="final1"></div>
+
+            <div class="words">  
+            <p class="par1">Efficient Client Acquisition</p>
+            <P>Intelligent matching system, push property information to target customer groups.</P>
+            <P> Real-time feedback mechanism, quickly understand customer feedback and needs.</P>
+            <P> Data analysis tools, insight into market trends, optimize property promotion strategies.</P>
+            </div>
+              <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\finals.jpg">
+          </div>
+
+
+
+
+          <div class="final2">
+            
+            <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\finals 2.webp" style="width: 420px;" height="240px">
+            <div class="final3"></div>
+            <div class="words1">  
+            <p class="par2">Intuitive and User Friendly Interface</p>
+            <P>Clear navigation bar for quick access to needed functions.</P>
+            <P> Simple publishing process, complete information release in just a few steps.</P>
+            <P>Customized interface, adjust display information according to the agents needs.</P>
+            </div>
+             
+          </div>
+
+
+          <div class="final4">
+            <div class="final5"></div>
+
+            <div class="words2">  
+            <p class="par3">Security Assurance and Professional Support</p>
+            <P>Advanced encryption technology to protect user data security.</P>
+            <P> Professional customer service team, ready to answer questions at any time.</P>
+            <P> Regular updates to ensure the platforms functions keep pace with the times.</P>
+            </div>
+              <img src="C:\Users\asana\OneDrive\Desktop\HTML\CSS\final 3.jpg">
+          </div>
+
+
+
+
+
+           <a href="contact.html"><div class="lastman">
+            <P>GET STARTED</P>
+           </div></a>
+
+
+        
+  
+            </section>
+
+            <footer>
+
+
+              <ul class="three">
+                  <li>About us</li>
+                  <li>Career</li>
+                  <li>Accessibility</li>
+                  <li>Terms of use</li>
+              </ul>
+              <ul class="four">
+                  <li>App help</li>
+                  <li>Rentals</li>
+                  <li>Advertise with us</li>
+                  <li>Join our team</li>
+                  <li>Cookie policy</li>
+              </ul>
+      
+              <div class="socialIcons">
+                  <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                  <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                  <a href="#"><i class="fa-brands fa-square-instagram"></i></a>
+                  <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+              </div>
+      
+              <img src="C:\Users\asana\OneDrive\Pictures\Screenshots\Screenshot 2025-04-04 101427.png" style="width: 100px;">
+              <div class="footerBottom">
+                  <p>Copyright &copy;2025;OS House Sales</p>
+                  
+          
+            </div>
+          </footer>
+</body>
+</html>

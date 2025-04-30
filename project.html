@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar{
+            height: 640px;
+            width: 100%;
+            background: url(Rental.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            
+            
+        }
+        .navbar .header{
+            height: 60px;
+            background-color: #2D4930;
+            color: white;
+            width: 100%;
+            position: absolute;
+            display: flex;
+
+        }
+
+        .header img{
+            width: 55px;
+            height: 90%;
+            padding-left: 300Px;
+        }
+
+        .header .one{
+            display: flex;
+            margin-left: 420px;
+            margin-top: 15px;
+
+           
+
+        }
+
+        .one li{
+            display: inline;
+            margin: 12px;
+            font-size: 18px;
+            
+
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        .header  .btn{
+            margin-left: 60px;
+            height: 50%;
+            margin-top: 12px;
+            background-color: white;
+            color: rgb(10, 113, 249);
+            cursor: pointer;
+            border: 1px solid rgb(51, 47, 47);
+            outline: none;
+            width: 100px;
+            border-radius: 5px;
+        }
+
+        .header  .btn1{
+            margin-left: 20px;
+            height: 50%;
+            margin-top: 12px;
+            background-color: rgb(62, 95, 212);
+            color: white;
+            cursor: pointer;
+            border: 1px solid rgb(51, 47, 47);
+            outline: none;
+            width: 80px;
+            border-radius: 5px;
+        }
+
+        div.one{
+            display: flex;
+            background-color: white;
+            width: 100%;
+            height: 90px;
+            justify-content: space-between;
+            margin-bottom: 21px;
+
+        }
+        div.one .two{
+            margin-top: 35px;
+            margin-left: 146px;
+        }
+
+        div.one .two li{
+            font-size: 32px;
+        }
+
+        div.one .search{
+            display: flex;
+          margin-right: 56px;
+          height: 38px;
+          background-color: rgba(127, 125, 125, 0.259);
+          width: 320px;
+          padding-top: 6px;
+          margin-top: 30px;
+          border-radius: 18px;
+
+        }
+
+        div.one .search input{
+            height: 35px;
+            outline: none;
+            background: transparent;
+            border: 2px;
+            color: black;
+            margin-left: 11px;
+            width: 220px;
+            font-size: 15px;
+            padding-left: 6px;
+        }
+
+        div.one .search .search1{
+            background-color: rgb(50, 134, 230);
+            height: 36px;
+            width: 70px;
+            text-align: center;
+            margin-left: 19px;
+            border-radius: 18px;
+            color: white;
+            padding-top: 8px;
+            margin-top: -6px;
+            
+        }
+
+        .search1 P{
+            padding-top: 4px;
+            font-size: 18px;
+        }
+
+        .project{
+            display: block;
+            padding: 8px;
+            margin: 13px;
+            margin-left: 22px;
+
+        }
+
+        .card-auto{
+            width: 90%;
+            background-color: aqua;
+            margin: 11px;
+            padding: 19px;
+            border-radius: 22px;
+
+        }
+        .card-auto img{
+            width: 250px;
+            height: 200px;
+            border-radius: 9px;
+        }
+
+        .card-auto .inners{
+            display: flex;
+
+        }
+
+        .card-auto .inners1{
+            display: block;
+            margin-left: 32px;
+            margin-top: 35px;
+           
+        }
+        .card-auto .inners1 h2{
+            margin-top: -21px;
+            margin-bottom: 21px;
+            font-size: 28px;
+        }
+
+        .card-auto .inners1 p{
+            margin-bottom: 21px;
+            margin-left: 21px;
+            margin-top: -21px;
+        }
+        
+        .card-auto .inners1 .az{
+            padding-top: 17px;
+            margin-left: -2px;
+            font-size: 16.5px;
+        }
+
+        .card-auto .inners1 h4{
+            padding-top: 14px;
+            font-size: 17px;
+        }
+
+        .inners1 h4 strong{
+            font-size: 22px;
+            padding-left: 9px;
+        }
+
+        
+    </style>
+</head>
+
+
+<body>
+
+    <nav class="navbar">
+        <div class="header">
+            <img src="C:\Users\asana\OneDrive\Pictures\Screenshots\Screenshot 2025-04-04 101427.png">
+            <ul class="one">
+                <a href="#"><li>Project</li></a>
+                <a href="portfolio.html"><li>Home</li></a>
+                <a href="#"><li>Rent</li></a>
+                <a href="buy.html"><li>Buy</li></a> 
+            </ul>
+
+            <a href="login.html"><button class="btn">Login / Signup</button></a>
+            <a href="services.html"><button class="btn1">Agents Hub</button></a>
+        </div>
+    </nav>
+
+    <div class="one">
+        <ul class="two">
+        <li>Rentals</li>
+        </ul>
+
+        <div class="search">
+            <input type="search" placeholder="Search Propery Keyword">
+            <div class="search1"><p>Search</p></div>
+        </div>
+    </div>
+
+    <hr>
+    <div class="project">
+
+    <div class="card-auto">
+        <div class="inners">
+            <img src="rental4.jpg">
+            <div class="inners1">
+            <h2>210 Ridley Street.</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>210 Laidley St, San Francisco, CA 94131, USA San Francisco</p>
+            <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+            <hr>
+
+           <h4> From   <strong>  XOF 3,657,890</strong> </h4>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="card-auto">
+        <div class="inners">
+            <img src="buy 12.jpg">
+            <div class="inners1">
+            <h2>210 Ridley Street.</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>210 Laidley St, San Francisco, CA 94131, USA San Francisco</p>
+                <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+                <hr>
+
+               <h4> From   <strong>  XOF 3,657,890</strong> </h4>
+
+        </div>
+        
+        </div>
+
+    </div>
+
+
+    <div class="card-auto">
+        <div class="inners">
+            <img src="buy 15.jpg">
+            <div class="inners1">
+            <h2>210 Ridley Street.</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>210 Laidley St, San Francisco, CA 94131, USA San Francisco</p>
+            <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+            <hr>
+
+           <h4> From   <strong>  XOF 3,657,890</strong> </h4>
+        </div>
+        </div>
+
+    </div>
+
+
+    <div class="card-auto">
+        <div class="inners">
+            <img src="rental3.jpg">
+            <div class="inners1">
+            <h2>210 Ridley Street.</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>210 Laidley St, San Francisco, CA 94131, USA San Francisco</p>
+            <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+            <hr>
+
+           <h4> From   <strong>  XOF 3,657,890</strong> </h4>
+        </div>
+        </div>
+
+    </div>
+
+    <div class="card-auto">
+        <div class="inners">
+            <img src="rental2.jpg">
+            <div class="inners1">
+            <h2>210 Ridley Street.</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>210 Laidley St, San Francisco, CA 94131, USA San Francisco</p>
+            <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+            <hr>
+
+           <h4> From   <strong>  XOF 3,657,890</strong> </h4>
+        </div>
+        </div>
+
+    </div>
+
+
+    <div class="card-auto">
+        <div class="inners">
+            <img src="rental1.png">
+            <div class="inners1">
+            <h2>210 Ridley Street.</h2>
+
+
+            <i class="fa-solid fa-location-dot"></i><p>210 Laidley St, San Francisco, CA 94131, USA San Francisco</p>
+            <p class="az"> 6650 Sqrt ft  |   5 Beds   |   Single-family Ville</p>
+
+            <hr>
+
+           <h4> From   <strong>  XOF 3,657,890</strong> </h4>
+        </div>
+        </div>
+
+    </div>
+</div>
+    
+</body>
+</html>
